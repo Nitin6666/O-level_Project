@@ -1,30 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My E-Commerce Website</title>
+    <meta charset="UTF-8">
+    <title>MyStore - Online Shopping</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="header">
-    <h1>My Online Store</h1>
-    <p>Best Products at Best Prices</p>
-</div>
+<!--HEADER-->
 
-<div class="nav">
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-</div>
+<header>
 
-<div class="content">
-    <h2>Welcome!</h2>
-    <p>This is a simple e-commerce website developed as a project for NIELIT O Level.</p>
-</div>
+    <div class="top-navbar">
+        <div class="logo">
+            <h2><a href="index.html">MyStore</a></h2>
+        </div>
 
-<div class="footer">
-    <p>© 2025 My Online Store</p>
-</div>
+        <div class="search-section">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+
+        <div class="account-section">
+            <a href="login.html">Sign In</a>
+            <a href="register.html">Register</a>
+            <a href="orders.html">Orders</a>
+            <a href="cart.html">Cart 🛒</a>
+        </div>
+    </div>
+
+    <div class="menu-bar">
+        <a href="#">All</a>
+        <a href="products.html">Mobiles</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home & Kitchen</a>
+        <a href="#">Appliances</a>
+        <a href="#">Deals</a>
+        <a href="contact.html">Customer Service</a>
+    </div>
+
+</header>
+
+<!--HERO SECTION-->
+
+<section class="hero-banner">
+    <h1>Big Sale is Live!</h1>
+    <p>Up to 60% Off on Top Brands</p>
+    <a href="products.html">Shop Now</a>
+</section>
+
+<!--CATEGORY SECTION-->
+
+<section class="categories">
+
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+        <div class="category">
+            <img src="image/main/mobile.jpg" alt="Mobiles">
+            <h3>Mobiles</h3>
+        </div>
+
+        <div class="category">
+            <img src="image/main/laptop.jpg" alt="Laptops">
+            <h3>Laptops</h3>
+        </div>
+
+        <div class="category">
+            <img src="image/main/fashion.jpg" alt="Fashion">
+            <h3>Fashion</h3>
+        </div>
+
+        <div class="category">
+            <img src="image/main/home.jpg" alt="Home">
+            <h3>Home & Kitchen</h3>
+        </div>
+    </div>
+
+</section>
+
+<!--DEALS SECTION-->
+
+<section class="deals">
+
+    <h2>Today's Deals</h2>
+
+    <div class="deal-products">
+
+        <div class="product-card">
+            <img src="image/main/headphone.jpg">
+            <h3>Wireless Headphones</h3>
+            <p>₹2,499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/main/watch.jpg">
+            <h3>Smart Watch</h3>
+            <p>₹3,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/main/tv.jpg">
+            <h3>LED TV</h3>
+            <p>₹28,000</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/main/shoes.jpg">
+            <h3>Running Shoes</h3>
+            <p>₹1,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!--FEATURED PRODUCTS-->
+
+<section class="featured-products">
+
+    <h2>Best Sellers</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="image/main/iphone.jpg">
+            <h3>iPhone 14</h3>
+            <p>₹65,000</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/main/laptop1.jpg">
+            <h3>HP Laptop</h3>
+            <p>₹45,000</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/main/tablet.jpg">
+            <h3>Samsung Tablet</h3>
+            <p>₹18,000</p>
+            <button>View Details</button>
+        </div>
+
+        <div class="product-card">
+            <img src="image/main/speaker.jpg">
+            <h3>Bluetooth Speaker</h3>
+            <p>₹2,200</p>
+            <button>View Details</button>
+        </div>
+
+    </div>
+
+</section>
+
+<!--CUSTOMER REVIEWS-->
+
+<section class="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+        <p>"Amazing service and fast delivery!"</p>
+        <h4>- Nitin Kumar</h4>
+    </div>
+
+    <div class="review">
+        <p>"Great quality products at best price."</p>
+        <h4>- Rahul Sharma</h4>
+    </div>
+
+</section>
+<!--NEWSLETTER-->
+
+<section class="newsletter">
+
+    <h2>Subscribe to our Newsletter</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+
+</section>
+
+<!--FOOTER-->
+
+<footer>
+
+    <div class="footer-links">
+
+        <div>
+            <h4>Get to Know Us</h4>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
+
+        <div>
+            <h4>Connect with Us</h4>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+        </div>
+
+        <div>
+            <h4>Make Money with Us</h4>
+            <p>Sell on MyStore</p>
+            <p>Affiliate Program</p>
+        </div>
+
+        <div>
+            <h4>Help</h4>
+            <p>Customer Service</p>
+            <p>Returns</p>
+            <p>Privacy Policy</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 MyStore.com | NIELIT O Level Practical Project</p>
+    </div>
+
+</footer>
 
 </body>
 </html>

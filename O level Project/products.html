@@ -1,38 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Products</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="product.css">
 </head>
+
 <body>
+<header class="header">
+    <h1>🛒 Our Products</h1>
 
-<div class="header">
-    <h1>Our Products</h1>
-</div>
+</header>
 
-<div class="products">
+<section class="products">
 
-    <div class="product">
+    <!-- Product 1 -->
+    <div class="product-card">
+        <span class="badge">20% OFF</span>
+        <img src="image/product/phone1.jpg" alt="Phone Image">
         <h3>Mobile Phone</h3>
-        <p>Price: ₹10,000</p>
-        <button>Buy Now</button>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="price">
+            <span class="old-price">₹12,000</span>
+            ₹10,000
+        </p>
+        <button onclick="addToCart('Mobile Phone')">Add to Cart</button>
     </div>
 
-    <div class="product">
+    <!-- Product 2 -->
+    <div class="product-card">
+        <span class="badge">15% OFF</span>
+        <img src="image/product/laptop.jpg" alt="Laptop Image">
         <h3>Laptop</h3>
-        <p>Price: ₹40,000</p>
-        <button>Buy Now</button>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p class="price">
+            <span class="old-price">₹47,000</span>
+            ₹40,000
+        </p>
+        <button onclick="addToCart('Laptop')">Add to Cart</button>
     </div>
 
-    <div class="product">
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="image/product/headphone1.jpg" alt="Headphone Image">
         <h3>Headphones</h3>
-        <p>Price: ₹2,000</p>
-        <button>Buy Now</button>
+        <div class="rating">⭐⭐⭐⭐☆</div>
+        <p class="price">₹2,000</p>
+        <button onclick="addToCart('Headphones')">Add to Cart</button>
     </div>
 
+</section>
+
+<div class="navigation-buttons">
+    <a href="index.html" class="nav-btn">⬅ Back to Home</a>
+    <a href="about.html" class="nav-btn">Next ➡</a>
 </div>
 
-<a href="index.html">Go Back</a>
+<script>
+    function addToCart(productName) {
+        alert(productName + " added to cart!");
+    }
+</script>
+
+
+<footer>
+
+    <div class="footer-links">
+
+        <div>
+            <h4>Get to Know Us</h4>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
+
+        <div>
+            <h4>Connect with Us</h4>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+        </div>
+
+        <div>
+            <h4>Make Money with Us</h4>
+            <p>Sell on MyStore</p>
+            <p>Affiliate Program</p>
+        </div>
+
+        <div>
+            <h4>Help</h4>
+            <p>Customer Service</p>
+            <p>Returns</p>
+            <p>Privacy Policy</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 MyStore.com | NIELIT O Level Practical Project</p>
+    </div>
+
+</footer>
 
 </body>
 </html>

@@ -1,28 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contact-Online Shopping</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
 
-<div class="header">
+<!--HEADER-->
+
+<header class="header">
     <h1>Contact Us</h1>
+    <p>We would love to hear from you!</p>
+</header>
+
+<section class="contact-container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Email:</strong> support@example.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Address:</strong> Agra, Uttar Pradesh, India</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Subject</label>
+            <input type="text" placeholder="Enter subject">
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<div class="navigation-buttons">
+    <a href="index.html">⬅ Back to Home</a>
 </div>
 
-<form class="content">
-    Name:<br>
-    <input type="text"><br><br>
+    <div class="footer-links">
 
-    Email:<br>
-    <input type="email"><br><br>
+        <div>
+            <h4>Get to Know Us</h4>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
 
-    Message:<br>
-    <textarea></textarea><br><br>
+        <div>
+            <h4>Connect with Us</h4>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+        </div>
 
-    <input type="submit" value="Submit">
-</form>
-<a href="index.html">Go Back</a>
+        <div>
+            <h4>Make Money with Us</h4>
+            <p>Sell on MyStore</p>
+            <p>Affiliate Program</p>
+        </div>
+
+        <div>
+            <h4>Help</h4>
+            <p>Customer Service</p>
+            <p>Returns</p>
+            <p>Privacy Policy</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 MyStore.com | NIELIT O Level Practical Project</p>
+    </div>
+
+</footer>
 
 </body>
 </html>
