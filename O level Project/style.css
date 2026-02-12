@@ -422,3 +422,247 @@ body {
     background: #ff9900;
     color: black;
 }
+/* ================= CART PAGE ================= */
+
+.cart-section {
+    padding: 40px;
+    min-height: 60vh;
+}
+
+.cart-section h1 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.cart-item button {
+    padding: 6px 12px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background: darkred;
+}
+
+.clear-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.clear-btn:hover {
+    background: #333;
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* TOP NAVBAR */
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+    width: 40%;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    background: #ff9900;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* NAV ACTIONS */
+.nav-actions a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Underline hover animation */
+.nav-actions a::after,
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ff9900;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+.nav-actions a:hover::after,
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+/* AUTH BUTTONS */
+.auth-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #ff9900;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background: transparent;
+    box-shadow: 0 0 10px #ff9900;
+}
+
+.register-btn {
+    background: #ff9900;
+    color: black !important;
+}
+
+.register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,153,0,0.6);
+}
+
+/* MAIN NAV */
+.main-nav {
+    background: #1e293b;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 12px 40px;
+}
+
+.main-nav ul li {
+    position: relative;
+    margin-right: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* MEGA MENU */
+.mega-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    color: black;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    width: 600px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.mega-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-column h4 {
+    margin-bottom: 10px;
+    color: #ff9900;
+}
+
+.mega-column a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.mega-column a:hover {
+    color: #ff9900;
+    transform: translateX(5px);
+}
+
+/* SHOW MEGA MENU */
+.dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .search-bar {
+        display: none;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .mega-menu {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+.account-section a.active {
+    color: #ff6600;
+    font-weight: bold;
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}

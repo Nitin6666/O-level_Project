@@ -1,24 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cart</title>
+    <meta charset="UTF-8">
+    <title>MyStore - Cart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h2>Your Cart</h2>
-<ul id="cartItems"></ul>
+<header>
+    <div class="top-navbar">
+        <div class="logo">
+            <h2><a href="index.html">MyStore</a></h2>
+        </div>
+
+        <div class="account-section">
+            <a href="index.html">Home</a>
+            <a href="orders.html">Orders</a>
+            <a href="cart.html">Cart 🛒</a>
+        </div>
+    </div>
+</header>
+
+<section class="cart-section">
+
+    <h1>Your Shopping Cart</h1>
+
+    <div id="cart-items"></div>
+
+    <h2 id="total-amount"></h2>
+
+    <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+
+</section>
+
+<footer>
+    <div class="copyright">
+        <p>© 2026 MyStore.com | NIELIT O Level Practical Project</p>
+    </div>
+</footer>
 
 <script>
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-let list = document.getElementById("cartItems");
 
-cart.forEach(item => {
-    let li = document.createElement("li");
-    li.innerText = item.name + " - ₹" + item.price;
-    list.appendChild(li);
-});
+// ==========================
+// LOAD CART ITEMS
+// ==========================
+
+function loadCart() {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartContainer = document.getElementById("cart-items");
+    let total = 0;
+
+    cartContainer.innerHTML = "";
+
+    if(cart.length === 0){
+        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+        document.getElementById("total-amount").innerText = "";
+        return;
+    }
+
+    cart.forEach((item, index) => {
+
+        // Convert price safely to number
+        let price = Number(item.price.toString().replace(/[^0-9]/g, ""));
+        total += price;
+
+        cartContainer.innerHTML += `
+            <div class="cart-item">
+                <h3>${item.name}</h3>
+                <p>₹${price}</p>
+                <button onclick="removeItem(${index})">Remove</button>
+            </div>
+        `;
+
+    });
+
+    document.getElementById("total-amount").innerText =
+        "Total Amount: ₹" + total.toLocaleString();
+
+}
+
+
+
+// ==========================
+// REMOVE ITEM
+// ==========================
+
+function removeItem(index){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    loadCart();
+
+}
+
+
+// ==========================
+// CLEAR CART
+// ==========================
+
+function clearCart(){
+
+    localStorage.removeItem("cart");
+    loadCart();
+
+}
+
+
+// Load cart on page open
+window.onload = loadCart;
+
 </script>
 
-<a href="checkout.html">Checkout</a>
 </body>
 </html>

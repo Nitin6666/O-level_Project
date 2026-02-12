@@ -165,7 +165,7 @@ body {
     cursor: pointer;
 }
 
-copyright {
+.copyright {
     text-align: center;
     margin-top: 20px;
 }

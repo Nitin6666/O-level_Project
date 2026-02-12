@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* ================= NAVBAR ================= */
+
+.top-navbar {
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo h2 a {
+    text-decoration: none;
+    color: #00c6ff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00c6ff;
+}
+
+/* ================= FORM SECTION ================= */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.form-box {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+}
+
+.form-box h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+/* ================= INPUT STYLE ================= */
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    transition: 0.3s;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -12px;
+    font-size: 12px;
+    color: #00c6ff;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00c6ff;
+}
+
+/* ================= SWITCH TEXT ================= */
+
+.switch {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 500px) {
+    .form-box {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .top-navbar {
+        padding: 10px 20px;
+    }
+}
+/* Extra login features */
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    cursor: pointer;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.social button {
+    margin: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+    transition: 0.3s;
+}
+
+.google {
+    background: #db4437;
+}
+
+.facebook {
+    background: #4267B2;
+}
+
+.social button:hover {
+    transform: scale(1.05);
+}
