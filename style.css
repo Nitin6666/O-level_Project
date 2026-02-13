@@ -719,3 +719,28 @@ header {
 .contact-form button:hover {
     background: #333;
 }
+.about-section {
+    padding: 50px;
+}
+
+.about-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.about-text, .about-skills {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.mission-section {
+    background: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
