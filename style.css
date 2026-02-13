@@ -114,8 +114,8 @@ h1, h2, h3, h4 {
 }
 
 .category img {
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -665,4 +665,57 @@ header {
 .copyright {
     text-align: center;
     margin-top: 20px;
+}
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discount-badge {
+    position: absolute;
+    background: red;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.product-card {
+    position: relative;
+}
+.contact-section {
+    padding: 50px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #333;
 }
